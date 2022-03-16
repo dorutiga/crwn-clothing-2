@@ -2,7 +2,7 @@ import "./header.scss";
 import { ReactComponent as Logo } from "../../assets/crown .svg";
 import { Link, Outlet } from "react-router-dom";
 import { Fragment } from "react";
-const Header = () => {
+const Navigation = () => {
   return (
     <Fragment>
       <div className="navigation">
@@ -13,7 +13,7 @@ const Header = () => {
           <Link className="nav-link" to="/shop">
             SHOP
           </Link>
-          <Link className="nav-link" to="/sign-in">
+          <Link className="nav-link" to="/auth">
             SIGN IN
           </Link>
         </div>
@@ -22,4 +22,4 @@ const Header = () => {
     </Fragment>
   );
 };
-export default Header;
+export default Navigation;
